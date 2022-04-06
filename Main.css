@@ -3,7 +3,7 @@ header,footer{
     padding: 10px;
     margin-left: 0;
     text-align: center;
-    background-color: rgb(11,37,54);
+    background-color: rgb(39,56,82);
     color: white;
 }
 
@@ -88,11 +88,18 @@ input{
 }
 
 .description{
-    font-size: small;
+    font-size: x-small;
     margin-top: 5px;
 }
 
+.detail{
+    font-size: small;
+}
+
 @media screen and (max-width:768px){
+    .body{
+        padding-left: 1rem;
+    }
     .news{
         display: flex;
         flex-direction: column;
