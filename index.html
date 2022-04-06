@@ -7,17 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News</title>
     <link rel="stylesheet" href="Main.css">
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
 </head>
 
 <body>
-    <div class="header">
+    <header>
         <img src="Image/News.jpg" alt="logo" height="35px">
-    </div>
+    </header>
     <div class="main">
     <div class="flexbox">
-        <div>
-            Select Category
-                <br>
+        <div id="category">
+            <h5 style="margin: 0;">SELECT CATEGORY</h5>
                     <select>
                         <option>All </option>
                         <option>Economy</option>
@@ -26,59 +26,57 @@
                     </select>
         </div>
         <div id="allnews">
-            <h3>All News</h3>
+            <h2>All News</h2>
         </div>
-        <div>
-            Subscribe
-            <br>
-            <input type="email" placeholder="Enter Email" style="width: 50%;">
+        <div id="sub">
+            <h5 style="margin: 0;">SUBSCRIBE</h5>
+            <input type="email" placeholder="Email Address">
             <button type="button" id="subscribe">Subscribe</button>
         </div>
     </div>
-    <hr>
-    <div>
-        <div class="news">
+    <hr style="height:0.5px; background-color: black; ">
+    <ul>
+        <article class="news">
             <div style="margin-right: 15px;">
                 <img src="Image/images.jpg" alt="topic1" class="image">
             </div>
             <div>
-                <h4>TitleOne</h4>
-                <p>Posted on 1 April,2022 // Category: Category One</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatum magni explicabo ipsum distinctio iure dolores, suscipit voluptas pariatur minus deserunt ipsa esse inventore animi atque hic odit earum repellat nulla, error eveniet quas ipsam facere quibusdam. Odit aut obcaecati ab quas quam ducimus. Consequatur asperiores officia quo earum quasi dolorem, itaque porro rem iste debitis voluptate ea inventore aut!
+                <h3>Title One</h3>
+                <p class="description">Posted on 1 April,2022 // Category: Category One</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam adipisci, quaerat laudantium, deleniti consequuntur, maxime expedita error exercitationem quia excepturi beatae praesentium odit fugiat in velit sint iusto sed delectus.
                 </p>
-                    <button type="button" id="continue">Continue Reading>></button> 
+                    <button type="button" class="continue">Continue Reading</button> 
             </div>
-        </div>
+        </article>
         <hr>
-        <div class="news">
+        <article class="news">
             <div style="margin-right: 15px;">
                 <img src="Image/images.jpg" alt="topic2" class="image">
             </div>
             <div>
-                <h4>TitleTwo</h4>
-                <p>Posted on 1 April,2022 // Category: Category two</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit tempore reprehenderit, nam nihil aliquid sed illum, facere saepe asperiores ab suscipit numquam totam sapiente quaerat delectus provident non libero ipsa et harum nemo veritatis! Cupiditate, alias. Doloribus assumenda minima libero aliquam cupiditate. Repellendus possimus blanditiis fugiat obcaecati perferendis minima distinctio temporibus dolore vitae provident dignissimos nisi, hic, labore ipsam.</p>
-                    <button type="button" id="continue">Continue Reading>></button>
+                <h3>Title Two</h3>
+                <p class="description">Posted on 1 April,2022 // Category: Category two</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat animi sapiente, eum, magnam saepe explicabo dolores nobis amet omnis libero natus sequi consequuntur! Natus, esse excepturi sed cum soluta vitae!</p>
+                    <button type="button" class="continue">Continue Reading</button>
             </div>
-        </div>
+        </article>
         <hr>
-        <div class="news">
+        <article class="news">
             <div style="margin-right: 15px;">
                 <img src="Image/images.jpg" alt="topic3" class="image">
             </div>
             <div>
-                <h4>TitleThree</h4>
-                <p>Posted on 1 April,2022 // Category: Category Three</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur repellat dolore officiis illum illo! Quas iure repellendus repudiandae recusandae tempore officia expedita blanditiis labore. Quae repellendus obcaecati tempore, illum facilis esse voluptates distinctio architecto numquam quibusdam inventore dolore et ipsum assumenda, id voluptatum eius ullam magnam quia! Temporibus molestias pariatur, eligendi iure fuga quaerat vel.</p>
-                    <button type="button" id="continue">Continue Reading>></button>
+                <h3>Title Three</h3>
+                <p class="description">Posted on 1 April,2022 // Category: Category Three</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, id suscipit esse eaque est obcaecati optio possimus alias, quae expedita doloremque odit? Delectus expedita ut eligendi saepe vero, laudantium velit?</p>
+                    <button type="button" class="continue">Continue Reading</button>
             </div>
-        </div>
-        <hr>
-    </div>
+        </article>
+    </ul>
 </div>
-    <div class="footer">
+    <footer>
         @NewsFeed 2022
-    </div>
+    </footer>
 </body>
 
 </html>

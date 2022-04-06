@@ -1,21 +1,51 @@
-.header,.footer{
+header,footer{
     width: 100%;
     padding: 10px;
+    margin-left: 0;
     text-align: center;
-    background-color: rgb(5, 5, 55);
+    background-color: rgb(11,37,54);
     color: white;
+}
+
+body{
+    overflow-x: hidden;
+    margin: 0;
+    font-family: 'ABeeZee';
+}
+
+ul{
+    list-style-type:none;
+    padding-left: 0;
+    padding-right: 15%;
+}
+
+div h3{
+    margin: 0;
+}
+
+ul hr{
+    background-color: rgb(236, 234, 234);
+}
+
+.main{
+    padding: 10px 5% 5% 5%;
 }
 
 .flexbox{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     padding-top: 1rem;
-    padding-left: 5rem;
+    justify-content: space-between;
 }
 
-.main{
-    padding: 10px 5% 5% 5%;
+#category{
+    float: left;
+    width: 30%;
+}
+
+#sub{
+    float: right;
+    width: 30%;
 }
 
 .news{
@@ -23,9 +53,11 @@
     flex-direction: row;
 }
 
-#continue{
-    background-color: rgb(149, 93, 74);
+.continue{
+    background-color: rgb(225, 74, 23);
     color: white;
+    padding: 10px;
+    border: 0;
 }
 
 .image{
@@ -33,21 +65,45 @@
     display: flex;
 }
 
-body{
-    overflow-x: hidden;
-    font-family: 'Adamina';
+select{
+    margin-top: 10px; 
+    width: 70%; 
+    height: 30px;
+}
+
+input{
+    margin-top: 10px; 
+    width: 67%; 
+    height: 30px; 
+    border-width: 1px; 
+    padding: 0;
 }
 
 #subscribe{
-    background-color: blue;
+    background-color: rgb(10, 10, 10);
     color: white;
+    width: 30%; 
+    height: 30px; 
+    border: 0;
 }
 
-#allnews{
-    padding-left: 5rem;
+.description{
+    font-size: small;
+    margin-top: 5px;
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:768px){
+    .news{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:576px){
     .flexbox{
         display: flex;
         flex-direction: column;
@@ -65,32 +121,17 @@ body{
         padding: 0% 2% 2% 2%;
     }
 
-    .news{
-        display: flex;
-        flex-direction: column;
+    #subscribe{
+        width: auto;
     }
 
-    #allnews{
-        padding-left: 0%;
+    select{
+        width: auto;
     }
 
-    .image{
-        width: 100%;
+    input{
+        width: auto;
     }
 }
 
-@media screen and (max-width:650px){
-    .news{
-        display: flex;
-        flex-direction: column;
-    }
-
-    #allnews{
-        padding-left: 0%;
-    }
-
-    .image{
-        width: 100%;
-    }
-}
 
